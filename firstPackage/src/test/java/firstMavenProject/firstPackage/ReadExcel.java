@@ -29,6 +29,7 @@ public class ReadExcel extends InputUtility{
 	  ReadExcel.takeSnapShot("HomePage");
 	  ReadExcel.launchURL(URL+"messages.xhtml");
 	  ReadExcel.takeSnapShot("Messages Page");
+	  
 	 
 	  
 		 	
