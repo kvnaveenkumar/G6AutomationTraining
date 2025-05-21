@@ -29,9 +29,6 @@ public class ReadExcel extends InputUtility{
 	  ReadExcel.takeSnapShot("HomePage");
 	  ReadExcel.launchURL(URL+"messages.xhtml");
 	  ReadExcel.takeSnapShot("Messages Page");
-	  
-	 
-	  
 		 	
 		
 	}
@@ -45,6 +42,7 @@ public class ReadExcel extends InputUtility{
 	}
 	public static void launchURL(String pageURL) {
 		driver.get(pageURL);
+		System.out.println("Home page");
 		
 	}
 	public static String readExcelValues(int rowNumber,int cellNumber) throws IOException{
@@ -72,8 +70,8 @@ public class ReadExcel extends InputUtility{
 		TakesScreenshot screenshot = (TakesScreenshot)driver;
 		//Saving the screenshot in desired location
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		//Path to the location to save screenshot
-		FileUtils.copyFile(source, new File("C:\\Users\\Naveen\\eclipse-workspace\\firstPackage\\SeleniumScreenshots\\"+fileName+".jpg"));
+		//Path to the location to save screenshot = C:\Users\Naveen\git\repository\firstPackage
+		FileUtils.copyFile(source, new File(".\\SeleniumScreenshots\\"+fileName+".jpg"));
 		System.out.println("Screenshot is captured");
 		}
 

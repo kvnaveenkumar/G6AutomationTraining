@@ -27,7 +27,7 @@ public class Dropdown {
 				//dd.selectByIndex(2);
 				//dd.selectByValue("eggs");
 				dd.selectByVisibleText("Puppeteer");
-				
+				System.out.println();
 	}
 	
 	public static void openBrowser() {
